@@ -1,1 +1,1 @@
-export {FormulaEditor} from "./ui/formulaEditor"
+export { FormulaEditor } from "./ui/formulaEditor"
