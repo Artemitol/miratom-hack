@@ -10,3 +10,10 @@ class FormulaSerializer(serializers.ModelSerializer):
     class Meta:
         model = Formula
         fields = '__all__'
+        extra_kwargs = {
+            'author': {'read_only': True}
+        }
+
+    def create(self, validated_data):
+        validated_data['author'] = self.context['request'].user
+        return super(FormulaSerializer, self).create(validated_data)
