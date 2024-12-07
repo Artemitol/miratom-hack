@@ -2,7 +2,7 @@ import { nextui } from "@nextui-org/theme"
 
 /** @type {import('tailwindcss').Config} */
 // eslint-disable-next-line no-undef
-module.exports = {
+export default {
     content: [
         "./index.html",
         "./src/layouts/**/*.{js,ts,jsx,tsx,mdx}",
