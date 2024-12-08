@@ -19,6 +19,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path(f'{api_urls}authentication/', include('authentication.urls')),
     path('swagger/', schema_view.as_view()),  # Документация Swagger
-    path(f'{api_urls}formulas/', include('formulas.urls')),
 
 ]
